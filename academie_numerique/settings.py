@@ -107,7 +107,7 @@ if os.environ.get('DATABASE_URL'):
         default=os.environ.get('DATABASE_URL'),
         conn_max_age=600
     )
-     DATABASES['default']['OPTIONS'] = {
+    DATABASES['default']['OPTIONS'] = {
         'options': '-c search_path=numerique_ia'
     }
 # Password validation
